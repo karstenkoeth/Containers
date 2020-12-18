@@ -11,9 +11,10 @@
 # Versions
 #
 # 2020-12-17 0.01 kdk First Version
+# 2020-12-18 0.02 kdk With link to AppEngine and with wget socat ...
 
 PROG_NAME="Update System - Ubuntu"
-PROG_VERSION="0.01"
+PROG_VERSION="0.02"
 PROG_SCRIPTNAME="updatesystem"
 
 # #########################################
@@ -97,6 +98,7 @@ fi
 # For karstenkoeth/bashutils:
 apt-get update -y 
 apt-get install -y git
+apt-get install -y wget socat curl
 apt-get install -y uuid
 apt-get install -y uuid-runtime
 
@@ -119,4 +121,8 @@ chmod u+x ./bashutils/src/install_bashutils_local.sh
 # ./bashutils/src/install_bashutils_local.sh
 
 # Get SICK AppEngine with Deep Link:
+# Token! No chance to get it easy ...
+# wget https://supportportal.sick.com/file/fd02f058-e46c-4105-b0b9-62383d18bc9f/
+
 # Get SICK AppManager with Deep Link:
+# wget https://www.sick.com/media/zip/8/28/028/SICK_AppManager_1.4.4_Linux_64_bit_DC0010028.ZIP

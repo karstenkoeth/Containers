@@ -103,7 +103,8 @@ apt-get install -y uuid
 apt-get install -y uuid-runtime
 
 # For SICK AppEngine Linux x86-64:
-apt-get install -y libice5 libsm6 libfontconfig1
+apt-get install -y libice6 x11-common libsm6 libfontconfig1 fontconfig-config ucf fonts-dejavu-core libfreetype6 libpng16-16 libusb-1.0-0
+apt-get install -y libcap2-bin
 apt-get install -y libgomp1
 
 # FOR SICK AppManager Linux CLI:
@@ -123,6 +124,8 @@ chmod u+x ./bashutils/src/install_bashutils_local.sh
 # Get SICK AppEngine with Deep Link:
 # Token! No chance to get it easy ...
 # wget https://supportportal.sick.com/file/fd02f058-e46c-4105-b0b9-62383d18bc9f/
+# Unzip:
+# 7z x AppEngine_with_curl.zip
 
 # Get SICK AppManager with Deep Link:
 # wget https://www.sick.com/media/zip/8/28/028/SICK_AppManager_1.4.4_Linux_64_bit_DC0010028.ZIP
